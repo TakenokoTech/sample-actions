@@ -11,6 +11,13 @@ jobs:
     - uses: actions/checkout@v1
     - name: nokotech/actions
       uses: nokotech/actions/release@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        owner: TakenokoTech
+        repo: sample-actions
+        dir: ./
+        file: README.md
+        content-type: text/plain
     - name: ls
       run: |
         ls -la 
