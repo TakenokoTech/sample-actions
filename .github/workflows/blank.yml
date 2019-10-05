@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: nokotech/actions
-      uses: nokotech/actions@master
+      uses: nokotech/actions/release@master
     - name: ls
       run: |
         ls -la 
