@@ -20,4 +20,5 @@ jobs:
         content-type: text/plain
     - name: ls
       run: |
-        ls -la 
+        ls -la
+        git status 
