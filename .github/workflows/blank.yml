@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: nokotech/actions
-      uses: nokotech/actions/release@master
+      uses: nokotech/actions/release@release
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         owner: TakenokoTech
