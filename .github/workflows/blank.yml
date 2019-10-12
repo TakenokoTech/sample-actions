@@ -18,11 +18,8 @@ jobs:
         dir: ./
         file: README.md
         content-type: text/plain
-    - name: ls
+    - name: git push release
       run: |
-        ls -la
-        git branch
-        git status 
-        git checkout -b release
         git remote set-url origin https://TakenokoTech:${{ secrets.GITHUB_TOKEN }}@github.com/TakenokoTech/sample-actions.git
-        git push --set-upstream origin release
+        git checkout -b release
+        git push --force-with-lease origin release
