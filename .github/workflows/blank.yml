@@ -21,4 +21,7 @@ jobs:
     - name: ls
       run: |
         ls -la
+        git branch
         git status 
+        git checkout -b release
+        git push origin 
